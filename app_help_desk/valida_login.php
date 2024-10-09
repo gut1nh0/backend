@@ -22,8 +22,7 @@ foreach ($usuario_cadastrado as $user){
 
 if ($usuario_autenticado == true){
     $_SESSION['autenticado'] = 'SIM';
-    //header ('Location: painel.php?login=sucesso');
-    echo "Usuário autorizado";
+    header ('Location: painel.php?login=sucesso');
 }
 
 else{

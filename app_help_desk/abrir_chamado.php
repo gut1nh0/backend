@@ -1,3 +1,8 @@
+<?php 
+
+require_once ("login.php");
+
+?>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -53,7 +58,7 @@
 
                     <div class="row mt-5">
                       <div class="col-6">
-                        <button class="btn btn-lg btn-warning btn-block" type="submit">Voltar</button>
+                        <a href="painel.php" class="btn btn-lg btn-warning btn-block" type="submit">Voltar</a>
                       </div>
 
                       <div class="col-6">
