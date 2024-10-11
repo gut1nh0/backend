@@ -4,24 +4,75 @@ require_once ("login.php");
 
 ?>
 
+
+
 <html>
   <head>
     <meta charset="utf-8" />
     <title>App Help Desk</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    
-    </style>
+
+  
   </head>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+     
+     *{
+      font-family: "Inter", sans-serif;
+     }
 
-  <body>
+    .navbar {
+      background-color: black;
+      height: 80px;
+    }
 
-    <nav class="navbar navbar-dark bg-dark">
+    .navbar-brand{
+      color: #fff;
+    }
+
+    .bg-nav{
+      background-color: #a3a3a3;
+
+    }
+
+    .card-home{
+      color: white;
+      border-radius: 20px;
+      
+    }
+    
+    .card{
+      background-color: #27272a;
+      top: 40px;
+      border-radius: 20px;
+    }
+
+    .card-header{
+      font-size: 30px;
+      
+    }
+
+    .sair{
+    width: 80px;
+    height: 30px;
+    background-color: #ffc107 !important;
+    color: black;
+    border-radius: 9999px;
+    border: none;
+    font-weight: bold;
+    }
+</style>
+
+  <body class="bg-nav"> 
+
+    <nav class="navbar">
       <a class="navbar-brand" href="./index.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
-      <button onclick="location.href='logoff.php'" id="sair" type="button">Sair</button>
+      <button onclick="location.href='logoff.php'" class="sair" type="button">Sair</button>
     </nav>
 
     <div class="container">    

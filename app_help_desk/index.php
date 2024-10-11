@@ -3,18 +3,66 @@
     <meta charset="utf-8" />
     <title>App Help Desk</title>
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet"  href="styles.css">
 
-    </style>
   </head>
 
-  <body>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+     
+     *{
+      font-family: "Inter", sans-serif;
+     }
 
-    <nav class="navbar navbar-dark bg-dark">
+    .navbar {
+      background-color: black;
+      height: 80px;
+    }
+
+    .navbar-brand{
+      color: #fff;
+    }
+
+    .navbar-brand:hover{
+      color:#e5e7eb;
+    }
+
+    .bg-login{
+      background-color: #a3a3a3;
+
+    }
+
+    .card{
+      background-color: #27272a;
+      color: white;
+      border-radius: 20px;
+      top: 40px;
+      display: flex;
+      
+    }
+
+    .card-header{
+      font-size: 30px;
+    }
+
+    .btn{
+      width: 150px;
+      align-self: center;
+      margin-left: 25%;
+      background-color: #ffc107;
+    }
+
+
+  </style>
+
+  <body class="bg-login">
+
+    <nav class="navbar">
       <a class="navbar-brand" href="./index.php">
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         App Help Desk
       </a>
+
     </nav>
 
     <div class="container">    
@@ -48,7 +96,7 @@
                   Faça o login primeiro
                 </div>
                 <?php } ?>
-                <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
+                <button class="btn" type="submit">Entrar</button>
               </form>
             </div>
           </div>
