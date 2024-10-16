@@ -4,6 +4,7 @@
     <title>App Help Desk</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet"  href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
   </head>
 
@@ -21,6 +22,13 @@
 
     .navbar-brand{
       color: #fff;
+    }
+
+    .navbar-brand {
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      gap: 1rem;
     }
 
     .navbar-brand:hover{
@@ -50,6 +58,7 @@
       align-self: center;
       margin-left: 25%;
       background-color: #ffc107;
+      font-weight: bold;
     }
 
 
@@ -59,7 +68,7 @@
 
     <nav class="navbar">
       <a class="navbar-brand" href="./index.php">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <i class="fa-solid fa-headset" style="color:#ffc107; font-size: 25px;"></i>
         App Help Desk
       </a>
 

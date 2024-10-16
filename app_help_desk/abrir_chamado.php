@@ -9,15 +9,47 @@ require_once ("login.php");
     <title>App Help Desk</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+     
+     *{
+      font-family: "Inter", sans-serif;
+     }
+
+    .navbar {
+      background-color: black;
+      height: 80px;
+    }
+
+    .navbar-brand{
+      color: #fff;
+    }
+
+    .navbar-brand {
+      display: flex;
+      padding: 1rem;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .navbar-brand:hover{
+      color:#e5e7eb;
+    }
+
+    .bg-nav{
+      background-color: #a3a3a3;
+
+    }
     </style>
   </head>
 
-  <body>
+  <body class="bg-nav">
 
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="./index.php">
-        <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <nav class="navbar">
+      <a class="navbar-brand" href="./painel.php">
+        <i class="fa-solid fa-headset" style="color:#ffc107; font-size: 25px;"></i>
         App Help Desk
       </a>
     </nav>
@@ -34,15 +66,15 @@ require_once ("login.php");
               <div class="row">
                 <div class="col">
                   
-                  <form>
+                  <form action="registra_chamado.php" method="POST">
                     <div class="form-group">
                       <label>Título</label>
-                      <input type="text" class="form-control" placeholder="Título">
+                      <input name="titulo" type="text" class="form-control" placeholder="Título">
                     </div>
                     
                     <div class="form-group">
                       <label>Categoria</label>
-                      <select class="form-control">
+                      <select class="form-control" name="categoria">
                         <option>Criação Usuário</option>
                         <option>Impressora</option>
                         <option>Hardware</option>
@@ -53,7 +85,7 @@ require_once ("login.php");
                     
                     <div class="form-group">
                       <label>Descrição</label>
-                      <textarea class="form-control" rows="3"></textarea>
+                      <textarea name="descricao" class="form-control" rows="3"></textarea>
                     </div>
 
                     <div class="row mt-5">
