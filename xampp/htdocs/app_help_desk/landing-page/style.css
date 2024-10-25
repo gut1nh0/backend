@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url(./animation.css);
+
+:root {
+
+    --preto: black;
+    --verde: rgba(29, 185, 84, 1);
+    --branco: white;
+    --vermelho: red;
+
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: var(--branco);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container main {
+    height: 670px;
+}
+
+body {
+    background-color: black;
+}
+
+.bg {
+    background-color: var(--verde);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.conteudo {
+ 
+    height: 80px;
+    padding: 5px;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#mulher {
+    position: absolute;
+    left: 36.7%;
+    top: 60px;
+    border-top-left-radius: 800px;
+    z-index: 0;
+}
+
+.conteudo h1 {
+    position: absolute;
+    left: 39%;
+}
+
+.conteudo p {
+    position: absolute;
+    left: 30%;
+    top: 50px;
+}
+
+#logo {
+    position: absolute;
+    left: 1000px;
+}
+
+.login {
+    position: absolute;
+    left: 130px;
+    top: 25%;
+    background-color: var(--verde);
+    height: 350px;
+    width: 250px;
+    padding: 40px;
+    display: flex;
+    justify-content: center, space-evenly;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.login h1 {
+    padding-bottom: 30px;
+
+}
+
+form label{
+    margin-bottom: 30px;
+}
+
+input {
+    color: var(--preto); 
+    border-radius: 5px;
+    border: none;   
+    height: 1.5rem;
+    padding-left: 1rem;
+}
+
+.login button {
+    margin-top: 20px;
+    border-radius: 80px;
+    height: 50px;
+    background-color: var(--preto);
+    font-size: larger;
+    
+}
+
+button:hover{
+    background-color: gray;
+    transform: scale(1.05);
+    transition: transform 0.3s;
+
+}
+
+form :focus{
+    border: 5px solid --preto;
+
+}
+
+#email :valid{
+    color: var(--verde);
+}
+
+#email :invalid{
+    color: var(--vermelho);
+
+}
+
+.rodape {
+    background-color: var(--verde);
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
