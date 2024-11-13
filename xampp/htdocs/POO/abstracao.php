@@ -20,9 +20,9 @@ public $numFilhos = 4;
         $this->numFilhos = $Filhos;
     }
 
-    function modificarNome(){
+    function modificarNome($AlterarNome){
 
-        $this->nome = $AlteraNome;
+        $this->nome = $AlterarNome;
     }
 
 }
